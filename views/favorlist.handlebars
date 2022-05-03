@@ -1,0 +1,51 @@
+<script src="../../js/favorlist.js"></script>
+
+  
+
+<h1 class="titlos">Favorite Books</h1>
+<div >
+    <form action="/filter" method="POST" >
+      <input id="mpara_search"name="keyword" placeholder="search your favorite book">
+    </form>
+</div>
+<div>
+    <table >
+        <thead>
+        <tr>
+            <th>
+            Title
+            </th>
+            <th>
+            Author
+            </th>
+            <th>
+                WorkID
+            </th>
+            <th>
+            Action
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            {{#if lists }}
+                {{#each lists }}
+                  
+                        <td>{{ this.title }}</td>
+                        <td>{{ this.author }}</td>
+                        <td>{{ this.workid }}</td>
+                        <td>
+                            <button class="koumpi  submit" onclick="edit({{ this.workid }})">Edit</button>
+                            <button class="koumpi cancel " onclick="deleteBook({{ this.workid }})">Delete</button>
+                        </td>
+                    </tr>
+                {{/each }}
+            {{/if }}
+        </tbody>
+    </table>
+    <form action="edit" method="POST" id="favor_edit_form">
+        <input type="hidden" name="workid" id="workid">
+    </form>
+</div>
+
+<!-- END PAGE CONTAINER-->
+    

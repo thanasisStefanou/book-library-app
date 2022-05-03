@@ -1,0 +1,131 @@
+body {
+  padding: 50px 20%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+   background-color: #8ccc8c;
+}
+
+
+nav {
+  display:block;
+  position: sticky; 
+  top:0;
+  height: 10%;
+  background-color: #8ccc8c;
+  background-image:url(images/pattern.jpg);
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  display:block;
+  float: left;
+  color: #00B7FF;
+  padding: 15px 130px 15px 130px;
+  font-weight: bold;
+  font-size:18px;
+  text-decoration: none;
+  background: #ffffff;
+  background-clip: padding-box;
+ 
+}
+
+
+ a:hover {
+  background-color: #00B7FF;
+  color: #ffffff;
+}
+
+
+
+
+#titlos {
+  text-align: center;
+  color: #00B7FF;
+}
+
+#mpara_search {
+  width: 90%;
+  height: 40px;
+  float: left;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+#koumpi_search{
+  width: 9%;
+  height: 45px;
+  background-color: #00B7FF;
+  color: white;
+  border: 1px solid #00B7FF;
+  border-radius: 2px;
+  cursor:pointer;
+}
+.pinakas {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.koumpi {
+
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 4px;
+  cursor:pointer;
+
+}
+
+
+.cancel {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  
+}
+
+.submit {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+ 
+}
+
+
+
+.xrwmalink {
+  color: #337ab7;
+}
+
+.titlos {
+  color: #31708f;
+  font-weight: bold;
+}
+
+
+.xeirismos_formas{
+  display: block;
+  width: 90%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ 
+}

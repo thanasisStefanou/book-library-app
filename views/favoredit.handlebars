@@ -1,0 +1,34 @@
+
+ 
+
+
+<h2 class="titlos">Book Edit</h2>
+
+<form role="form" action="/update" method="POST">
+    <input type="hidden" name="workid" value="{{ result.workid }}">
+     <fieldset>
+            <legend >Title</legend>
+            <input type="text" class="xeirismos_formas"  name="title" value="{{ result.title }}">
+       </fieldset>
+       <fieldset>
+            <legend >Author</legend>
+            <input type="text" class="xeirismos_formas"  name="author" value="{{ result.author }}">
+            </fieldset>
+        <fieldset>
+             <legend >Work ID</legend>
+            <input type="number" class="xeirismos_formas"  name="new_workid" value="{{ result.workid }}">
+         </fieldset>
+          <fieldset>
+            <legend >Review</legend>
+            <textarea class="xeirismos_formas" rows="11" name="review" placeholder="Enter more text">
+                {{ result.review }}
+            </textarea>
+       </fieldset>
+        <br><br>
+    
+        <button type="submit" class="koumpi submit">Submit</button>
+        <button type="reset" class="koumpi cancel">Cancel</button>
+        
+</form>
+
+    

@@ -1,0 +1,52 @@
+<script src="../../js/favorlist.js"></script>
+
+
+ <h1 class="titlos">Search Results</h1>
+
+
+
+<div>
+    <table class="pinakas">
+        <thead>
+        <tr>
+            <th>
+            Title
+            </th>
+            <th>
+            Author
+            </th>
+            <th>
+                WorkID
+            </th>
+            <th>
+            Pages
+            </th>
+            <th>
+            Price (USD)
+            </th>
+            <th>
+            Action
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            <!-- apotelesmata anazhthshs-->
+            {{#if results }}
+                {{#each results }}
+                    <tr>
+                        <td>{{ this.titleshort }}</td>
+                        <td>{{ this.author }}</td>
+                        <td>{{ this.workid }}</td>
+                        <td>{{ this.pages }}</td>
+                        <td>{{ this.priceusa }}</td>
+                        <td><button class="koumpi submit" id="koumpi" title="Vote" onclick="FavorAdd(`{{ this.titleshort }}`, `{{ this.author }}`, {{ this.workid }}, ``)">add to favorite</button></td>
+                    </tr>
+                {{/each }}
+            {{/if}}
+           
+        </tbody>
+    </table>
+</div>
+
+
+    
